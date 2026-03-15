@@ -3,13 +3,23 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fameally | Meal planning and shopping lists for households</title>
-        <meta name="description"
-            content="Fameally helps households plan meals and generate organised shopping lists automatically. Spend less time planning and shopping.">
-        <meta property="og:title" content="Fameally – Smart Meal Planning for Households">
-        <meta property="og:description" content="Plan meals faster and generate organised shopping lists automatically.">
-        <meta property="og:url" content="https://fameally.com">
-        <meta property="og:type" content="website">
+        <title>
+            Fameally | Meal planning and shopping lists for households
+        </title>
+        <meta
+            name="description"
+            content="Fameally helps households plan meals and generate organised shopping lists automatically. Spend less time planning and shopping."
+        />
+        <meta
+            property="og:title"
+            content="Fameally – Smart Meal Planning for Households"
+        />
+        <meta
+            property="og:description"
+            content="Plan meals faster and generate organised shopping lists automatically."
+        />
+        <meta property="og:url" content="https://fameally.com" />
+        <meta property="og:type" content="website" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -87,8 +97,6 @@
                         </h2>
                     </div>
                     <p class="section-copy">
-                        <p></p>
-                        <p></p>
                         Most apps lean heavily toward recipe discovery. Fameally
                         focuses on the whole planning flow: choosing meals,
                         building the week, generating the list, and helping you
@@ -165,28 +173,85 @@
 
             <section class="section" id="beta">
                 <div class="container">
-                    <div class="card cta-card">
+                    <div class="card cta-card signup-card">
                         <span class="section-label">Early access</span>
                         <h2>Join the Fameally beta</h2>
-                        <p>
-                            Interested in trying Fameally early or following the
-                            launch? Email
-                            <a
-                                href="mailto:support@fameally.com?subject=Fameally%20Beta%20Interest"
-                                >support@fameally.com</a
-                            >
-                            with the subject
-                            <p>
-                            </p>
-                            <span class="code">Fameally Beta Interest</span> and include either 
-                            Android or iOS in the message.
+                        <p class="signup-intro">
+                            Enter your email below and we will take you to a
+                            short sign-up form with most fields already filled
+                            in for you.
                         </p>
-                        <div class="hero-actions">
-                            <a
-                                class="button button-primary"
-                                href="mailto:support@fameally.com?subject=Fameally%20Beta%20Interest"
-                                >Contact for beta</a
+
+                        <form
+                            id="beta-prefill-form"
+                            class="signup-form"
+                            novalidate
+                        >
+                            <label class="signup-label" for="beta-email"
+                                >Email address</label
                             >
+
+                            <div class="signup-row signup-row-top">
+                                <input
+                                    id="beta-email"
+                                    class="signup-input"
+                                    type="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required
+                                />
+
+                                <fieldset
+                                    class="platform-picker platform-picker-inline"
+                                    id="platform-picker"
+                                >
+                                    <legend class="sr-only">
+                                        Choose your platform
+                                    </legend>
+
+                                    <label class="platform-option">
+                                        <input
+                                            type="radio"
+                                            name="platform_choice"
+                                            value="ios"
+                                        />
+                                        <span>iPhone / iPad</span>
+                                    </label>
+
+                                    <label class="platform-option">
+                                        <input
+                                            type="radio"
+                                            name="platform_choice"
+                                            value="android"
+                                        />
+                                        <span>Android</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+
+                            <div
+                                class="platform-status"
+                                id="platform-status"
+                                aria-live="polite"
+                            ></div>
+
+                            <div class="signup-submit-row">
+                                <button
+                                    class="button button-primary signup-submit"
+                                    type="submit"
+                                >
+                                    Continue to sign up
+                                </button>
+                            </div>
+
+                            <p class="small signup-footnote">
+                                We will prefill your email, platform and source,
+                                then open the final form for confirmation.
+                            </p>
+                        </form>
+
+                        <div class="hero-actions">
                             <a
                                 class="button button-secondary"
                                 href="account-deletion.html"
@@ -208,5 +273,101 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            (function () {
+                const form = document.getElementById("beta-prefill-form");
+                const platformStatus =
+                    document.getElementById("platform-status");
+                const emailInput = document.getElementById("beta-email");
+
+                function detectPlatform() {
+                    const ua =
+                        navigator.userAgent ||
+                        navigator.vendor ||
+                        window.opera ||
+                        "";
+                    if (/android/i.test(ua)) return "android";
+                    if (/iPad|iPhone|iPod/i.test(ua)) return "ios";
+                    return "";
+                }
+
+                function getPlatformLabel(value) {
+                    return value === "ios" ? "iOS" : "Android";
+                }
+
+                function setPlatform(value, detected) {
+                    if (!value) {
+                        platformStatus.textContent =
+                            "Choose your platform so we can prefill the sign-up form correctly.";
+                        return;
+                    }
+
+                    const label = getPlatformLabel(value);
+                    platformStatus.textContent = detected
+                        ? "Detected platform: " +
+                          label +
+                          ". You can still change it if needed."
+                        : "Selected platform: " + label + ".";
+                }
+
+                const detected = detectPlatform();
+                if (detected) {
+                    const selected = form.querySelector(
+                        'input[name="platform_choice"][value="' +
+                            detected +
+                            '"]',
+                    );
+                    if (selected) selected.checked = true;
+                    setPlatform(detected, true);
+                } else {
+                    setPlatform("", false);
+                }
+
+                form.querySelectorAll('input[name="platform_choice"]').forEach(
+                    function (radio) {
+                        radio.addEventListener("change", function () {
+                            setPlatform(radio.value, false);
+                        });
+                    },
+                );
+
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    if (!emailInput.value.trim()) {
+                        emailInput.reportValidity();
+                        return;
+                    }
+
+                    const selectedPlatformRadio = form.querySelector(
+                        'input[name="platform_choice"]:checked',
+                    );
+
+                    if (!selectedPlatformRadio) {
+                        platformStatus.textContent =
+                            "Please choose iPhone / iPad or Android before continuing.";
+                        return;
+                    }
+
+                    const platformLabel = getPlatformLabel(
+                        selectedPlatformRadio.value,
+                    );
+
+                    const googleFormBase =
+                        "https://docs.google.com/forms/d/e/1FAIpQLSd9SMirpYHX884R0PvYW4J8nnygqXk6-GAl8uQQb8mfVcC_kg/viewform?usp=pp_url";
+
+                    const params = new URLSearchParams({
+                        "entry.823770980": platformLabel,
+                        "entry.1661981072": emailInput.value.trim(),
+                        "entry.356145364": "",
+                        "entry.1803207863": "Website",
+                    });
+
+                    window.location.href =
+                        googleFormBase + "&" + params.toString();
+                });
+            })();
+        </script>
     </body>
 </html>
