@@ -1,38 +1,50 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en-GB">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            Fameally | Meal planning and shopping lists for households
-        </title>
+        <title>Fameally | Meal planner and shared shopping lists</title>
         <meta
             name="description"
-            content="Fameally helps households plan meals and generate organised shopping lists automatically. Spend less time planning and shopping."
+            content="Fameally helps households plan meals, generate organised shopping lists, and keep weekly routines easier to manage."
         />
         <meta
             property="og:title"
-            content="Fameally – Smart Meal Planning for Households"
+            content="Fameally - Meal planner and shared shopping lists"
         />
         <meta
             property="og:description"
-            content="Plan meals faster and generate organised shopping lists automatically."
+            content="Plan meals, turn ingredients into shopping lists, and keep household essentials organised."
         />
         <meta property="og:url" content="https://fameally.com" />
         <meta property="og:type" content="website" />
+        <meta
+            property="og:image"
+            content="https://fameally.com/assets/fameally-icon-512.png"
+        />
+        <link rel="canonical" href="https://fameally.com/" />
+        <link rel="icon" href="assets/fameally-icon-512.png" />
+        <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <header class="site-header home-header">
             <div class="container">
                 <nav class="topbar" aria-label="Primary">
-                    <div class="brand">
-                        <div class="brand-mark">F</div>
+                    <a class="brand" href="index.html" aria-label="Fameally home">
+                        <img
+                            class="brand-mark brand-icon"
+                            src="assets/fameally-icon-512.png"
+                            alt=""
+                            width="44"
+                            height="44"
+                        />
                         <span>Fameally</span>
-                    </div>
+                    </a>
                     <div class="nav-links">
                         <a href="#features">Features</a>
-                        <a href="#beta">Early access</a>
+                        <a href="#plans">Plans</a>
+                        <a href="support.html">Support</a>
                         <a href="privacy-policy.html">Privacy</a>
                     </div>
                 </nav>
@@ -40,67 +52,70 @@
                 <section class="hero hero-home">
                     <div class="hero-copy">
                         <span class="badge"
-                            >Coming soon to iOS and Android</span
+                            >Meal plans and shopping lists for households</span
                         >
                         <h1>
-                            Plan meals. Generate shopping lists. Shop faster.
+                            Plan meals, generate shopping lists, and keep the
+                            week moving.
                         </h1>
                         <p class="hero-lead">
-                            Fameally is a meal planning and shopping list app
-                            built for households who want a smoother weekly
-                            routine, less friction at home, and less time wasted
-                            in the supermarket.
+                            Fameally helps you choose meals, build a weekly
+                            plan, and turn ingredients into organised shopping
+                            lists for food, cleaning, toiletries, and everyday
+                            household items.
                         </p>
                         <div class="hero-actions">
-                            <a class="button button-primary" href="#beta"
-                                >Join early access</a
+                            <a class="button button-primary" href="#features"
+                                >See features</a
                             >
                             <a
                                 class="button button-secondary"
-                                href="privacy-policy.html"
-                                >View legal pages</a
+                                href="support.html"
+                                >Get support</a
                             >
                         </div>
                     </div>
 
-                    <div
-                        class="hero-panel card preview-card"
-                        aria-label="App preview summary"
-                    >
-                        <div class="preview-pill">Built for households</div>
-                        <ul class="preview-list">
-                            <li>Create meals and plan them across the week</li>
-                            <li>
-                                Turn meal plans into an automatic shopping list
-                            </li>
-                            <li>
-                                Organise shopping by category for faster
-                                in-store trips with Fameally+
-                            </li>
-                            <li>
-                                Reuse saved plans and routines with Fameally+
-                            </li>
-                        </ul>
+                    <div class="hero-media" aria-label="Fameally app preview">
+                        <img
+                            class="app-icon-large"
+                            src="assets/fameally-icon-512.png"
+                            alt="Fameally app icon"
+                            width="138"
+                            height="138"
+                        />
+                        <div class="phone-stack">
+                            <img
+                                class="phone-shot phone-shot-main"
+                                src="assets/app-store-3.jpg"
+                                alt="Fameally weekly meal planning screen"
+                            />
+                            <img
+                                class="phone-shot phone-shot-side"
+                                src="assets/app-store-1.jpg"
+                                alt="Fameally shopping list screen organised by category"
+                            />
+                        </div>
                     </div>
                 </section>
             </div>
         </header>
 
         <main>
-            <section class="section">
+            <section class="section section-band">
                 <div class="container two-col problem-section">
                     <div>
                         <span class="section-label">Why Fameally</span>
                         <h2>
-                            Meal planning should feel organised, not like a
-                            weekly chore.
+                            A calmer way to get from "what are we eating?" to
+                            "the list is ready."
                         </h2>
                     </div>
                     <p class="section-copy">
-                        Most apps lean heavily toward recipe discovery. Fameally
-                        focuses on the whole planning flow: choosing meals,
-                        building the week, generating the list, and helping you
-                        get through the shop with less effort.
+                        Fameally focuses on the practical weekly routine:
+                        create meals with ingredients, place them into a plan,
+                        generate the food shop, then keep the rest of the
+                        household list organised alongside it.
                     </p>
                 </div>
             </section>
@@ -109,234 +124,250 @@
                 <div class="container">
                     <div class="section-heading">
                         <span class="section-label">Features</span>
-                        <h2>Designed around the real weekly routine</h2>
+                        <h2>Designed around real household planning</h2>
                     </div>
 
                     <div class="grid feature-grid">
                         <section class="card feature-card">
                             <h3>Plan meals quickly</h3>
                             <p>
-                                Assign meals to each day of the week in seconds
-                                and build a clear plan for the days ahead.
+                                Add meals to the week and keep breakfast, lunch,
+                                and dinner planning as simple or detailed as you
+                                need.
                             </p>
                         </section>
 
                         <section class="card feature-card">
-                            <h3>Automatic list</h3>
+                            <h3>Generate food lists</h3>
                             <p>
-                                Ingredients from your selected meals flow into
-                                your shopping list automatically, reducing
-                                manual list building.
+                                Ingredients from planned meals flow into your
+                                shopping list, with matching units counted
+                                together automatically.
                             </p>
                         </section>
 
                         <section class="card feature-card">
-                            <h3>Shop by category</h3>
+                            <h3>Organise the whole shop</h3>
                             <p>
-                                Keep the list organised in a way that feels more
-                                natural while moving around the supermarket.
+                                Keep food, cleaning, toiletry, and general items
+                                in separate lists so shopping stays easier to
+                                scan.
                             </p>
                         </section>
 
                         <section class="card feature-card">
-                            <h3>Reuse favourites</h3>
+                            <h3>Reuse regular weeks</h3>
                             <p>
-                                Save plans, meals, methods and weekly staples so
-                                repeat weeks become much faster to set up.
+                                Save meal plans, keep weekly regulars in your
+                                library, and bring familiar routines back
+                                faster.
                             </p>
+                        </section>
+
+                        <section class="card feature-card">
+                            <h3>Share a family workspace</h3>
+                            <p>
+                                Invite household members and keep shared meals,
+                                plans, library items, and shopping lists in
+                                sync.
+                            </p>
+                        </section>
+
+                        <section class="card feature-card">
+                            <h3>Recover recent changes</h3>
+                            <p>
+                                Restore deleted meals, ingredients, plans,
+                                methods, and list items when something is
+                                removed by mistake.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-band" id="screenshots">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-label">In the app</span>
+                        <h2>From meal plan to shopping list</h2>
+                        <p class="section-copy section-intro">
+                            Fameally keeps the main routine close at hand:
+                            build the plan, generate the list, and keep reusable
+                            household items in the library.
+                        </p>
+                    </div>
+
+                    <div class="screenshot-grid">
+                        <figure class="screenshot-card">
+                            <img
+                                src="assets/app-store-3.jpg"
+                                alt="Fameally Planning screen with a week of dinners"
+                            />
+                            <figcaption>
+                                <strong>Plan the week</strong>
+                                <span
+                                    >Add meals to each day and keep the week
+                                    visible.</span
+                                >
+                            </figcaption>
+                        </figure>
+
+                        <figure class="screenshot-card">
+                            <img
+                                src="assets/app-store-1.jpg"
+                                alt="Fameally Shopping screen grouped by category"
+                            />
+                            <figcaption>
+                                <strong>Shop by category</strong>
+                                <span
+                                    >Ingredients from planned meals become a
+                                    clear shopping list.</span
+                                >
+                            </figcaption>
+                        </figure>
+
+                        <figure class="screenshot-card">
+                            <img
+                                src="assets/app-store-2.jpg"
+                                alt="Fameally Library screen with reusable food items"
+                            />
+                            <figcaption>
+                                <strong>Keep a library</strong>
+                                <span
+                                    >Save reusable food and household items for
+                                    faster future planning.</span
+                                >
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="plans">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-label">Pricing</span>
+                        <h2>Choose the plan that fits your household</h2>
+                        <p class="section-copy section-intro">
+                            Example GBP prices are shown here for guidance. The
+                            final local price, renewal terms, taxes, trials, and
+                            cancellation details are always shown in the app
+                            before purchase.
+                        </p>
+                    </div>
+
+                    <div class="pricing-grid">
+                        <section class="card pricing-card">
+                            <h3>Core</h3>
+                            <p class="pricing-intro">
+                                Essentials for one person getting their week
+                                under control.
+                            </p>
+                            <div class="price-row">
+                                <strong>&pound;0.99</strong>
+                                <span>GBP monthly</span>
+                            </div>
+                            <div class="price-row price-row-secondary">
+                                <strong>&pound;9.99</strong>
+                                <span>GBP yearly</span>
+                            </div>
+                            <ul>
+                                <li>Manage your week</li>
+                                <li>Generate food shopping lists</li>
+                                <li>Organise household shopping lists</li>
+                            </ul>
+                        </section>
+
+                        <section class="card pricing-card pricing-card-featured">
+                            <h3>Individual</h3>
+                            <p class="pricing-intro">
+                                More planning power for one user.
+                            </p>
+                            <div class="price-row">
+                                <strong>&pound;2.99</strong>
+                                <span>GBP monthly</span>
+                            </div>
+                            <div class="price-row price-row-secondary">
+                                <strong>&pound;29.99</strong>
+                                <span>GBP yearly</span>
+                            </div>
+                            <ul>
+                                <li>Save and reload full weeks</li>
+                                <li>Add weekly regulars instantly</li>
+                                <li>Restore deleted content for 30 days</li>
+                            </ul>
+                        </section>
+
+                        <section class="card pricing-card">
+                            <h3>Family</h3>
+                            <p class="pricing-intro">
+                                A shared household workspace for invited family
+                                members.
+                            </p>
+                            <div class="price-row">
+                                <strong>&pound;4.99</strong>
+                                <span>GBP monthly</span>
+                            </div>
+                            <div class="price-row price-row-secondary">
+                                <strong>&pound;39.99</strong>
+                                <span>GBP yearly</span>
+                            </div>
+                            <ul>
+                                <li>Shared household workspace</li>
+                                <li>Invite up to 5 other family members</li>
+                                <li>Keep planning and shopping in sync</li>
+                            </ul>
                         </section>
                     </div>
                 </div>
             </section>
 
             <section class="section">
-                <div class="container card trust-card">
-                    <div class="two-col trust-grid">
-                        <div>
-                            <span class="section-label">Simple value</span>
-                            <h2>
-                                Built to save time where it actually matters
-                            </h2>
-                        </div>
-                        <div>
-                            <p>
-                                Fameally is not trying to be a giant recipe
-                                discovery platform. It is a practical system for
-                                households that already know many of the meals
-                                they like and just want planning and shopping to
-                                be easier week after week.
-                            </p>
+                <div class="container two-col privacy-section">
+                    <div>
+                        <span class="section-label">Privacy and control</span>
+                        <h2>Your household data stays focused on the app.</h2>
+                    </div>
+                    <div class="privacy-copy">
+                        <p>
+                            Fameally stores the meals, plans, lists, settings,
+                            and workspace data needed to run the app. It does
+                            not sell your personal data or use it for
+                            third-party advertising.
+                        </p>
+                        <div class="inline-actions">
+                            <a
+                                class="button button-secondary"
+                                href="privacy-policy.html"
+                                >Privacy policy</a
+                            >
+                            <a
+                                class="button button-secondary"
+                                href="account-deletion.html"
+                                >Account deletion</a
+                            >
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section" id="beta">
-                <div class="container">
-                    <div class="card cta-card signup-card">
-                        <span class="section-label">Early access</span>
-                        <h2>Join the Fameally beta</h2>
-                        <p class="signup-intro">
-                            Enter your details below and we will take you to a
-                            short sign-up form with most fields already filled
-                            in for you.
-                        </p>
-
-                        <form
-                            id="beta-prefill-form"
-                            class="signup-form"
-                            novalidate
-                        >
-                            <label class="signup-label" for="beta-email"
-                                >Email address</label
+            <section class="section">
+                <div class="container card cta-card">
+                    <div class="two-col cta-grid">
+                        <div>
+                            <span class="section-label">Support</span>
+                            <h2>Need help with Fameally?</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Visit the support page for help with app issues,
+                                account deletion, subscriptions, privacy
+                                requests, and general feedback.
+                            </p>
+                            <a class="button button-primary" href="support.html"
+                                >Go to support</a
                             >
-
-                            <div class="signup-row signup-row-top">
-                                <input
-                                    id="beta-email"
-                                    class="signup-input"
-                                    type="email"
-                                    name="email"
-                                    placeholder="you@example.com"
-                                    autocomplete="email"
-                                    required
-                                />
-
-                                <fieldset
-                                    class="platform-picker platform-picker-inline"
-                                    id="platform-picker"
-                                >
-                                    <legend class="sr-only">
-                                        Choose your platform
-                                    </legend>
-
-                                    <label class="platform-option">
-                                        <input
-                                            type="radio"
-                                            name="platform_choice"
-                                            value="ios"
-                                        />
-                                        <span>iPhone / iPad</span>
-                                    </label>
-
-                                    <label class="platform-option">
-                                        <input
-                                            type="radio"
-                                            name="platform_choice"
-                                            value="android"
-                                        />
-                                        <span>Android</span>
-                                    </label>
-                                </fieldset>
-                            </div>
-
-                            <div
-                                class="platform-status"
-                                id="platform-status"
-                                aria-live="polite"
-                            ></div>
-
-                            <div class="signup-source-block">
-                                <span class="signup-label">
-                                    Where did you hear about Fameally?
-                                </span>
-
-                                <fieldset
-                                    class="source-picker source-picker-inline"
-                                    id="source-picker"
-                                >
-                                    <legend class="sr-only">
-                                        Where did you hear about Fameally?
-                                    </legend>
-
-                                    <label class="source-option">
-                                        <input
-                                            type="radio"
-                                            name="source_choice"
-                                            value="Website"
-                                        />
-                                        <span>Website</span>
-                                    </label>
-
-                                    <label class="source-option">
-                                        <input
-                                            type="radio"
-                                            name="source_choice"
-                                            value="Word of Mouth"
-                                        />
-                                        <span>Word of Mouth</span>
-                                    </label>
-
-                                    <label class="source-option">
-                                        <input
-                                            type="radio"
-                                            name="source_choice"
-                                            value="Reddit"
-                                        />
-                                        <span>Reddit</span>
-                                    </label>
-
-                                    <label class="source-option">
-                                        <input
-                                            type="radio"
-                                            name="source_choice"
-                                            value="Other"
-                                        />
-                                        <span>Other</span>
-                                    </label>
-                                </fieldset>
-
-                                <div
-                                    class="source-other-wrap"
-                                    id="source-other-wrap"
-                                    hidden
-                                >
-                                    <label
-                                        class="signup-label sr-only"
-                                        for="source-other"
-                                    >
-                                        Please specify where you heard about
-                                        Fameally
-                                    </label>
-                                    <input
-                                        id="source-other"
-                                        class="signup-input source-other-input"
-                                        type="text"
-                                        name="source_other"
-                                        placeholder="Please specify"
-                                        autocomplete="off"
-                                    />
-                                </div>
-
-                                <div
-                                    class="platform-status"
-                                    id="source-status"
-                                    aria-live="polite"
-                                ></div>
-                            </div>
-
-                            <div class="signup-submit-row">
-                                <button
-                                    class="button button-primary signup-submit"
-                                    type="submit"
-                                >
-                                    Continue to sign up
-                                </button>
-                            </div>
-
-                            <p class="small signup-footnote">
-                                We will prefill your email, platform and source,
-                                then open the final form for confirmation.
-                            </p>
-
-                            <p class="small beta-removal-note">
-                                To remove yourself from the early access list,
-                                email
-                                <a href="mailto:support@fameally.com"
-                                    >support@fameally.com</a
-                                >.
-                            </p>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -344,180 +375,14 @@
 
         <footer>
             <div class="container footer-grid small">
-                <div>© 2026 Fameally. All rights reserved.</div>
+                <div>&copy; 2026 Edward Nickless. All rights reserved.</div>
                 <div class="footer-links">
+                    <a href="support.html">Support</a>
                     <a href="privacy-policy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Use</a>
                     <a href="account-deletion.html">Account Deletion</a>
                 </div>
             </div>
         </footer>
-
-        <script>
-            (function () {
-                const form = document.getElementById("beta-prefill-form");
-                const platformStatus =
-                    document.getElementById("platform-status");
-                const sourceStatus = document.getElementById("source-status");
-                const emailInput = document.getElementById("beta-email");
-                const sourceOtherWrap =
-                    document.getElementById("source-other-wrap");
-                const sourceOtherInput =
-                    document.getElementById("source-other");
-
-                function detectPlatform() {
-                    const ua =
-                        navigator.userAgent ||
-                        navigator.vendor ||
-                        window.opera ||
-                        "";
-                    if (/android/i.test(ua)) return "android";
-                    if (/iPad|iPhone|iPod/i.test(ua)) return "ios";
-                    return "";
-                }
-
-                function getPlatformLabel(value) {
-                    return value === "ios" ? "iOS" : "Android";
-                }
-
-                function setPlatform(value, detected) {
-                    if (!value) {
-                        platformStatus.textContent =
-                            "Choose your platform so we can prefill the sign-up form correctly.";
-                        return;
-                    }
-
-                    const label = getPlatformLabel(value);
-                    platformStatus.textContent = detected
-                        ? "Detected platform: " +
-                          label +
-                          ". You can still change it if needed."
-                        : "Selected platform: " + label + ".";
-                }
-
-                function updateSourceUi() {
-                    const selectedSource = form.querySelector(
-                        'input[name="source_choice"]:checked',
-                    );
-
-                    if (!selectedSource) {
-                        sourceOtherWrap.hidden = true;
-                        sourceOtherInput.value = "";
-                        sourceStatus.textContent =
-                            "Choose where you heard about Fameally.";
-                        return;
-                    }
-
-                    if (selectedSource.value === "Other") {
-                        sourceOtherWrap.hidden = false;
-                        sourceStatus.textContent =
-                            "Please add a short description for Other.";
-                    } else {
-                        sourceOtherWrap.hidden = true;
-                        sourceOtherInput.value = "";
-                        sourceStatus.textContent =
-                            "Selected source: " + selectedSource.value + ".";
-                    }
-                }
-
-                const detected = detectPlatform();
-                if (detected) {
-                    const selected = form.querySelector(
-                        'input[name="platform_choice"][value="' +
-                            detected +
-                            '"]',
-                    );
-                    if (selected) selected.checked = true;
-                    setPlatform(detected, true);
-                } else {
-                    setPlatform("", false);
-                }
-
-                const defaultSource = form.querySelector(
-                    'input[name="source_choice"][value="Website"]',
-                );
-                if (defaultSource) defaultSource.checked = true;
-                updateSourceUi();
-
-                form.querySelectorAll('input[name="platform_choice"]').forEach(
-                    function (radio) {
-                        radio.addEventListener("change", function () {
-                            setPlatform(radio.value, false);
-                        });
-                    },
-                );
-
-                form.querySelectorAll('input[name="source_choice"]').forEach(
-                    function (radio) {
-                        radio.addEventListener("change", updateSourceUi);
-                    },
-                );
-
-                form.addEventListener("submit", function (event) {
-                    event.preventDefault();
-
-                    if (!emailInput.value.trim()) {
-                        emailInput.reportValidity();
-                        return;
-                    }
-
-                    const selectedPlatformRadio = form.querySelector(
-                        'input[name="platform_choice"]:checked',
-                    );
-                    if (!selectedPlatformRadio) {
-                        platformStatus.textContent =
-                            "Please choose iPhone / iPad or Android before continuing.";
-                        return;
-                    }
-
-                    const selectedSourceRadio = form.querySelector(
-                        'input[name="source_choice"]:checked',
-                    );
-                    if (!selectedSourceRadio) {
-                        sourceStatus.textContent =
-                            "Please choose where you heard about Fameally.";
-                        return;
-                    }
-
-                    const selectedSource = selectedSourceRadio.value;
-                    const otherText = sourceOtherInput.value.trim();
-
-                    if (selectedSource === "Other" && !otherText) {
-                        sourceOtherInput.reportValidity();
-                        sourceOtherInput.focus();
-                        sourceStatus.textContent =
-                            "Please specify where you heard about Fameally.";
-                        return;
-                    }
-
-                    const platformLabel = getPlatformLabel(
-                        selectedPlatformRadio.value,
-                    );
-
-                    const googleFormBase =
-                        "https://docs.google.com/forms/d/e/1FAIpQLSd9SMirpYHX884R0PvYW4J8nnygqXk6-GAl8uQQb8mfVcC_kg/viewform?usp=pp_url";
-
-                    const params = new URLSearchParams({
-                        "entry.823770980": platformLabel,
-                        "entry.1661981072": emailInput.value.trim(),
-                        "entry.356145364": "",
-                        "entry.1803207863":
-                            selectedSource === "Other"
-                                ? "__other_option__"
-                                : selectedSource,
-                    });
-
-                    if (selectedSource === "Other") {
-                        params.set(
-                            "entry.1803207863.other_option_response",
-                            otherText,
-                        );
-                    }
-
-                    window.location.href =
-                        googleFormBase + "&" + params.toString();
-                });
-            })();
-        </script>
     </body>
 </html>
