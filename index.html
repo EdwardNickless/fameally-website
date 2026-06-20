@@ -64,15 +64,29 @@
                             lists for food, cleaning, toiletries, and everyday
                             household items.
                         </p>
-                        <div class="hero-actions">
-                            <a class="button button-primary" href="#features"
-                                >See features</a
-                            >
+                        <div class="hero-actions store-actions" aria-label="Download Fameally">
                             <a
-                                class="button button-secondary"
-                                href="support.html"
-                                >Get support</a
+                                class="store-badge-link"
+                                href="https://play.google.com/store/apps/details?id=com.edwardnickless.fameally"
+                                aria-label="Get Fameally on Google Play"
                             >
+                                <img
+                                    class="google-play-badge"
+                                    src="assets/google-play-badge.png"
+                                    alt="Get it on Google Play"
+                                    width="646"
+                                    height="250"
+                                />
+                            </a>
+                            <span
+                                class="store-button store-button-disabled"
+                                role="link"
+                                aria-disabled="true"
+                                aria-label="App Store coming soon"
+                            >
+                                <span>App Store</span>
+                                <strong>Coming Soon</strong>
+                            </span>
                         </div>
                     </div>
 
@@ -87,13 +101,13 @@
                         <div class="phone-stack">
                             <img
                                 class="phone-shot phone-shot-main"
-                                src="assets/app-store-3.jpg"
+                                src="assets/screenshot-plan-week.jpg"
                                 alt="Fameally weekly meal planning screen"
                             />
                             <img
                                 class="phone-shot phone-shot-side"
-                                src="assets/app-store-1.jpg"
-                                alt="Fameally shopping list screen organised by category"
+                                src="assets/screenshot-shopping-list.jpg"
+                                alt="Fameally shopping list screen built from a meal plan"
                             />
                         </div>
                     </div>
@@ -197,48 +211,74 @@
                         </p>
                     </div>
 
-                    <div class="screenshot-grid">
-                        <figure class="screenshot-card">
-                            <img
-                                src="assets/app-store-3.jpg"
-                                alt="Fameally Planning screen with a week of dinners"
-                            />
-                            <figcaption>
-                                <strong>Plan the week</strong>
-                                <span
-                                    >Add meals to each day and keep the week
-                                    visible.</span
-                                >
-                            </figcaption>
-                        </figure>
+                    <div class="screenshot-carousel">
+                        <div
+                            class="screenshot-grid"
+                            tabindex="0"
+                            aria-label="Fameally app screenshots"
+                        >
+                            <figure class="screenshot-card">
+                                <img
+                                    src="assets/screenshot-plan-week.jpg"
+                                    alt="Fameally Planning screen with a week of dinners"
+                                />
+                                <figcaption>
+                                    <strong>Plan the week</strong>
+                                    <span
+                                        >Add meals to each day and keep the week
+                                        visible.</span
+                                    >
+                                </figcaption>
+                            </figure>
 
-                        <figure class="screenshot-card">
-                            <img
-                                src="assets/app-store-1.jpg"
-                                alt="Fameally Shopping screen grouped by category"
-                            />
-                            <figcaption>
-                                <strong>Shop by category</strong>
-                                <span
-                                    >Ingredients from planned meals become a
-                                    clear shopping list.</span
-                                >
-                            </figcaption>
-                        </figure>
+                            <figure class="screenshot-card">
+                                <img
+                                    src="assets/screenshot-shopping-list.jpg"
+                                    alt="Fameally Shopping screen with a list generated from planned meals"
+                                />
+                                <figcaption>
+                                    <strong>Build the shop</strong>
+                                    <span
+                                        >Ingredients from planned meals become a
+                                        clear shopping list.</span
+                                    >
+                                </figcaption>
+                            </figure>
 
-                        <figure class="screenshot-card">
-                            <img
-                                src="assets/app-store-2.jpg"
-                                alt="Fameally Library screen with reusable food items"
-                            />
-                            <figcaption>
-                                <strong>Keep a library</strong>
-                                <span
-                                    >Save reusable food and household items for
-                                    faster future planning.</span
-                                >
-                            </figcaption>
-                        </figure>
+                            <figure class="screenshot-card">
+                                <img
+                                    src="assets/screenshot-reuse-weeks.jpg"
+                                    alt="Fameally Plans screen with a saved weekly meal template"
+                                />
+                                <figcaption>
+                                    <strong>Reuse whole weeks</strong>
+                                    <span
+                                        >Save familiar routines and bring them
+                                        back when the week repeats.</span
+                                    >
+                                </figcaption>
+                            </figure>
+
+                            <figure class="screenshot-card">
+                                <img
+                                    src="assets/screenshot-save-meals.jpg"
+                                    alt="Fameally Meals screen showing saved meals and ingredients"
+                                />
+                                <figcaption>
+                                    <strong>Save regular meals</strong>
+                                    <span
+                                        >Keep meals you cook often ready for
+                                        faster future plans.</span
+                                    >
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div
+                            class="screenshot-scroll-indicator"
+                            aria-hidden="true"
+                        >
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -270,6 +310,7 @@
                             <div class="price-row price-row-secondary">
                                 <strong>&pound;9.99</strong>
                                 <span>GBP yearly</span>
+                                <span class="saving-badge">Save 16%</span>
                             </div>
                             <ul>
                                 <li>Manage your week</li>
@@ -290,6 +331,7 @@
                             <div class="price-row price-row-secondary">
                                 <strong>&pound;29.99</strong>
                                 <span>GBP yearly</span>
+                                <span class="saving-badge">Save 16%</span>
                             </div>
                             <ul>
                                 <li>Save and reload full weeks</li>
@@ -311,6 +353,7 @@
                             <div class="price-row price-row-secondary">
                                 <strong>&pound;39.99</strong>
                                 <span>GBP yearly</span>
+                                <span class="saving-badge">Save 33%</span>
                             </div>
                             <ul>
                                 <li>Shared household workspace</li>
@@ -323,51 +366,77 @@
             </section>
 
             <section class="section">
-                <div class="container two-col privacy-section">
-                    <div>
+                <div class="container privacy-section">
+                    <div class="section-heading">
                         <span class="section-label">Privacy and control</span>
                         <h2>Your household data stays focused on the app.</h2>
-                    </div>
-                    <div class="privacy-copy">
-                        <p>
+                        <p class="section-copy section-intro">
                             Fameally stores the meals, plans, lists, settings,
                             and workspace data needed to run the app. It does
                             not sell your personal data or use it for
                             third-party advertising.
                         </p>
-                        <div class="inline-actions">
-                            <a
-                                class="button button-secondary"
-                                href="privacy-policy.html"
-                                >Privacy policy</a
-                            >
-                            <a
-                                class="button button-secondary"
-                                href="account-deletion.html"
-                                >Account deletion</a
-                            >
-                        </div>
+                    </div>
+                    <div class="inline-actions">
+                        <a
+                            class="button button-secondary"
+                            href="privacy-policy.html"
+                            >Privacy policy</a
+                        >
+                        <a
+                            class="button button-secondary"
+                            href="account-deletion.html"
+                            >Account deletion</a
+                        >
                     </div>
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="download">
                 <div class="container card cta-card">
-                    <div class="two-col cta-grid">
-                        <div>
-                            <span class="section-label">Support</span>
-                            <h2>Need help with Fameally?</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Visit the support page for help with app issues,
-                                account deletion, subscriptions, privacy
-                                requests, and general feedback.
+                    <div class="cta-grid">
+                        <div class="section-heading">
+                            <span class="section-label">Download</span>
+                            <h2>Start planning with Fameally.</h2>
+                            <p class="section-copy section-intro">
+                                Download Fameally on Google Play today. The iOS
+                                app is in App Store review and will be available
+                                soon.
                             </p>
-                            <a class="button button-primary" href="support.html"
-                                >Go to support</a
-                            >
                         </div>
+                        <div class="store-actions cta-store-actions">
+                            <a
+                                class="store-badge-link"
+                                href="https://play.google.com/store/apps/details?id=com.edwardnickless.fameally"
+                                aria-label="Get Fameally on Google Play"
+                            >
+                                <img
+                                    class="google-play-badge"
+                                    src="assets/google-play-badge.png"
+                                    alt="Get it on Google Play"
+                                    width="646"
+                                    height="250"
+                                />
+                            </a>
+                            <span
+                                class="store-button store-button-disabled"
+                                role="link"
+                                aria-disabled="true"
+                                aria-label="App Store coming soon"
+                            >
+                                <span>App Store</span>
+                                <strong>Coming Soon</strong>
+                            </span>
+                        </div>
+                        <p class="store-legal">
+                            Google Play and the Google Play logo are trademarks
+                            of Google LLC.
+                        </p>
+                        <a
+                            class="button button-secondary support-link"
+                            href="support.html"
+                            >Need help?</a
+                        >
                     </div>
                 </div>
             </section>
