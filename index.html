@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en-GB">
     <head>
         <meta charset="UTF-8" />
@@ -42,11 +42,13 @@
                         <span>Fameally</span>
                     </a>
                     <div class="nav-links">
+                        <a href="index.html">Home</a>
                         <a href="#features">Features</a>
                         <a href="articles/index.html">Articles</a>
-                        <a href="#plans">Plans</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#download">Download</a>
                         <a href="support.html">Support</a>
-                        <a href="privacy-policy.html">Privacy</a>
+                        <a href="legal.html">Legal</a>
                     </div>
                 </nav>
 
@@ -68,26 +70,30 @@
                         <div class="hero-actions store-actions" aria-label="Download Fameally">
                             <a
                                 class="store-badge-link"
+                                href="https://apps.apple.com/gb/app/fameally-meal-planner/id6761440482"
+                                aria-label="Download Fameally on the App Store"
+                            >
+                                <img
+                                    class="app-store-badge"
+                                    src="assets/app-store-badge.svg"
+                                    alt="Download on the App Store"
+                                    width="120"
+                                    height="40"
+                                />
+                            </a>
+                            <a
+                                class="store-badge-link"
                                 href="https://play.google.com/store/apps/details?id=com.edwardnickless.fameally"
                                 aria-label="Get Fameally on Google Play"
                             >
                                 <img
                                     class="google-play-badge"
-                                    src="assets/google-play-badge.png"
+                                    src="assets/google-play-badge-tight.png"
                                     alt="Get it on Google Play"
-                                    width="646"
-                                    height="250"
+                                    width="564"
+                                    height="168"
                                 />
                             </a>
-                            <span
-                                class="store-button store-button-disabled"
-                                role="link"
-                                aria-disabled="true"
-                                aria-label="App Store coming soon"
-                            >
-                                <span>App Store</span>
-                                <strong>Coming Soon</strong>
-                            </span>
                         </div>
                     </div>
 
@@ -122,8 +128,8 @@
                     <div>
                         <span class="section-label">Why Fameally</span>
                         <h2>
-                            A calmer way to get from "what are we eating?" to
-                            "the list is ready."
+                            A calmer way to get from "What are we eating?" to
+                            "The list is ready."
                         </h2>
                     </div>
                     <p class="section-copy">
@@ -274,17 +280,25 @@
                                 </figcaption>
                             </figure>
                         </div>
-                        <div
-                            class="screenshot-scroll-indicator"
-                            aria-hidden="true"
-                        >
-                            <span></span>
-                        </div>
+                        <button
+                            class="screenshot-carousel-button screenshot-carousel-button-left"
+                            type="button"
+                            aria-label="Previous screenshot"
+                            data-carousel-direction="previous"
+                            hidden
+                        ></button>
+                        <button
+                            class="screenshot-carousel-button screenshot-carousel-button-right"
+                            type="button"
+                            aria-label="Next screenshot"
+                            data-carousel-direction="next"
+                            hidden
+                        ></button>
                     </div>
                 </div>
             </section>
 
-            <section class="section" id="plans">
+            <section class="section" id="pricing">
                 <div class="container">
                     <div class="section-heading">
                         <span class="section-label">Pricing</span>
@@ -400,12 +414,24 @@
                             <span class="section-label">Download</span>
                             <h2>Start planning with Fameally.</h2>
                             <p class="section-copy section-intro">
-                                Download Fameally on Google Play today. The iOS
-                                app is in App Store review and will be available
-                                soon.
+                                Download Fameally on Google Play or the App
+                                Store today.
                             </p>
                         </div>
                         <div class="store-actions cta-store-actions">
+                            <a
+                                class="store-badge-link"
+                                href="https://apps.apple.com/gb/app/fameally-meal-planner/id6761440482"
+                                aria-label="Download Fameally on the App Store"
+                            >
+                                <img
+                                    class="app-store-badge"
+                                    src="assets/app-store-badge.svg"
+                                    alt="Download on the App Store"
+                                    width="120"
+                                    height="40"
+                                />
+                            </a>
                             <a
                                 class="store-badge-link"
                                 href="https://play.google.com/store/apps/details?id=com.edwardnickless.fameally"
@@ -413,25 +439,17 @@
                             >
                                 <img
                                     class="google-play-badge"
-                                    src="assets/google-play-badge.png"
+                                    src="assets/google-play-badge-tight.png"
                                     alt="Get it on Google Play"
-                                    width="646"
-                                    height="250"
+                                    width="564"
+                                    height="168"
                                 />
                             </a>
-                            <span
-                                class="store-button store-button-disabled"
-                                role="link"
-                                aria-disabled="true"
-                                aria-label="App Store coming soon"
-                            >
-                                <span>App Store</span>
-                                <strong>Coming Soon</strong>
-                            </span>
                         </div>
                         <p class="store-legal">
-                            Google Play and the Google Play logo are trademarks
-                            of Google LLC.
+                            Apple, the Apple logo, and App Store are trademarks
+                            of Apple Inc. Google Play and the Google Play logo
+                            are trademarks of Google LLC.
                         </p>
                         <a
                             class="button button-secondary support-link"
@@ -447,13 +465,104 @@
             <div class="container footer-grid small">
                 <div>&copy; 2026 Edward Nickless. All rights reserved.</div>
                 <div class="footer-links">
-                    <a href="articles/">Articles</a>
+                    <a href="index.html">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="articles/index.html">Articles</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#download">Download</a>
                     <a href="support.html">Support</a>
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Use</a>
-                    <a href="account-deletion.html">Account Deletion</a>
+                    <a href="legal.html">Legal</a>
                 </div>
             </div>
         </footer>
+        <script>
+            (() => {
+                const carousel = document.querySelector(".screenshot-carousel");
+                const grid = carousel?.querySelector(".screenshot-grid");
+                const previousButton = carousel?.querySelector(
+                    '[data-carousel-direction="previous"]'
+                );
+                const nextButton = carousel?.querySelector(
+                    '[data-carousel-direction="next"]'
+                );
+
+                if (!carousel || !grid || !previousButton || !nextButton) {
+                    return;
+                }
+
+                let frame = 0;
+
+                const getCards = () =>
+                    Array.from(grid.querySelectorAll(".screenshot-card"));
+
+                const getCurrentIndex = () => {
+                    const gridLeft = grid.getBoundingClientRect().left;
+                    let currentIndex = 0;
+                    let closestDistance = Number.POSITIVE_INFINITY;
+
+                    getCards().forEach((card, index) => {
+                        const distance = Math.abs(
+                            card.getBoundingClientRect().left - gridLeft
+                        );
+
+                        if (distance < closestDistance) {
+                            closestDistance = distance;
+                            currentIndex = index;
+                        }
+                    });
+
+                    return currentIndex;
+                };
+
+                const updateButtons = () => {
+                    const maxScroll = grid.scrollWidth - grid.clientWidth;
+                    const tolerance = 2;
+                    const canScroll = maxScroll > tolerance;
+
+                    previousButton.hidden =
+                        !canScroll || grid.scrollLeft <= tolerance;
+                    nextButton.hidden =
+                        !canScroll || grid.scrollLeft >= maxScroll - tolerance;
+                };
+
+                const requestUpdate = () => {
+                    if (frame) {
+                        return;
+                    }
+
+                    frame = window.requestAnimationFrame(() => {
+                        frame = 0;
+                        updateButtons();
+                    });
+                };
+
+                const scrollByCard = (direction) => {
+                    const cards = getCards();
+                    const currentIndex = getCurrentIndex();
+                    const targetIndex = Math.max(
+                        0,
+                        Math.min(cards.length - 1, currentIndex + direction)
+                    );
+
+                    cards[targetIndex]?.scrollIntoView({
+                        behavior: "smooth",
+                        block: "nearest",
+                        inline: "start",
+                    });
+                };
+
+                previousButton.addEventListener("click", () => scrollByCard(-1));
+                nextButton.addEventListener("click", () => scrollByCard(1));
+                grid.addEventListener("scroll", requestUpdate, { passive: true });
+                window.addEventListener("resize", requestUpdate);
+                window.addEventListener("load", updateButtons);
+
+                if ("ResizeObserver" in window) {
+                    new ResizeObserver(requestUpdate).observe(grid);
+                }
+
+                updateButtons();
+            })();
+        </script>
     </body>
 </html>

@@ -3,7 +3,7 @@
     <loc>https://fameally.com/</loc>
   </url>
   <url>
-    <loc>https://fameally.com/articles/</loc>
+    <loc>https://fameally.com/articles/index.html</loc>
   </url>
   <url>
     <loc>https://fameally.com/articles/how-to-make-a-weekly-meal-plan-that-survives-a-normal-uk-week.html</loc>
@@ -13,6 +13,9 @@
   </url>
   <url>
     <loc>https://fameally.com/support.html</loc>
+  </url>
+  <url>
+    <loc>https://fameally.com/legal.html</loc>
   </url>
   <url>
     <loc>https://fameally.com/privacy-policy.html</loc>
