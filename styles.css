@@ -911,6 +911,48 @@ footer {
     color: var(--muted);
 }
 
+.comparison-table-wrap {
+    margin: 30px 0;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: var(--shadow);
+}
+
+.comparison-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+}
+
+.comparison-table caption {
+    padding: 16px 18px 0;
+    color: var(--accent);
+    font-weight: 850;
+    text-align: left;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    text-align: left;
+    vertical-align: top;
+}
+
+.comparison-table thead th,
+.comparison-table tbody th {
+    color: var(--accent);
+    font-weight: 850;
+}
+
+.comparison-table tbody tr:last-child th,
+.comparison-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
 .faq-list {
     display: grid;
     gap: 14px;
